@@ -1,0 +1,2 @@
+# Spoofr
+Spoofs browser data
