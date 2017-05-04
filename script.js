@@ -27,7 +27,7 @@ var randomYear = years[Math.floor(Math.random() * 4)];
 var randomMonth = months[Math.floor(Math.random() * 4)];
 var randomDay = days[Math.floor(Math.random() * 4)];
 var spoofKeyInt = Math.floor(Math.random() * (800 - 100)) + 100;
-var spoofTrafficInt = Math.floor(Math.random() * (100000 - 10000)) + 100;
+var spoofTrafficInt = Math.floor(Math.random() * (10000 - 5000)) + 5000;
 
 spoofKeyClick();
 
@@ -57,6 +57,5 @@ var sites = ['https://www.google.com', 'https://www.classroom.google.com', 'http
 function siteSpoofer() {
 	var ranSite = sites[Math.floor(Math.random() * 4)];
 	window.open(ranSite, '_blank');
-	window.focus();
 	setTimeout(siteSpoofer, spoofTrafficInt);
 }
